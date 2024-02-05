@@ -10,7 +10,7 @@ on:
         - arm64
         - x86_64
 jobs:
-  build-orchestrator:
+  build-ACRN:
     runs-on: ubuntu-22.04
     steps:
     - name: mkdirs
