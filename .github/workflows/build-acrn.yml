@@ -1,5 +1,4 @@
 name: Build ACRN Package
-
 on:
   workflow_dispatch:
     inputs:
