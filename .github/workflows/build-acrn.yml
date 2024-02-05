@@ -40,7 +40,7 @@ jobs:
                  flex bison xsltproc clang-format bc libpixman-1-dev libsdl2-dev 
                  libegl-dev libgles-dev libdrm-dev gnu-efi libelf-dev build-essential git-buildpackage 
                  devscripts dpkg-dev equivs lintian apt-utils pristine-tar dh-python python3-lxml 
-                 python3-defusedxml python3-tqdm python3-xmlschema python3-elementpath acpica-tools
+                 python3-defusedxml python3-tqdm python3-xmlschema python3-elementpath acpica-tools e2fslibs-dev
          version: 1.0
 
     - name: build deb
