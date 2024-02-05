@@ -13,11 +13,18 @@ jobs:
   build-orchestrator:
     runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v2
+    - name: install build dependencies    
     - uses: awalsh128/cache-apt-pkgs-action@latest
       with:
-        packages: dia doxygen doxygen-doc doxygen-gui doxygen-latex graphviz mscgen
-        version: 1.0
+         packages: |
+                 gcc git make vim libssl-dev libpciaccess-dev uuid-dev libsystemd-dev libevent-dev 
+                 libxml2-dev libxml2-utils libusb-1.0-0-dev python3 python3-pip libblkid-dev 
+                 e2fslibs-dev pkg-config libnuma-dev libcjson-dev liblz4-tool 
+                 flex bison xsltproc clang-format bc libpixman-1-dev libsdl2-dev 
+                 libegl-dev libgles-dev libdrm-dev gnu-efi libelf-dev build-essential git-buildpackage 
+                 devscripts dpkg-dev equivs lintian apt-utils pristine-tar dh-python python3-lxml 
+                 python3-defusedxml python3-tqdm python3-xmlschema python3-elementpath acpica-tools
+         version: 1.0
     - name: mkdirs
       run: |
           mkdir acrn-work
