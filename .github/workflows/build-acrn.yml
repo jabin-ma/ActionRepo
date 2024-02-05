@@ -41,7 +41,7 @@ jobs:
                  libegl-dev libgles-dev libdrm-dev gnu-efi libelf-dev build-essential git-buildpackage 
                  devscripts dpkg-dev equivs lintian apt-utils pristine-tar dh-python python3-lxml 
                  python3-defusedxml python3-tqdm python3-xmlschema python3-elementpath acpica-tools e2fslibs-dev
-         version: 1.0
+         version: 1.1
 
     - name: build deb
       run: debian/debian_build.sh clean && debian/debian_build.sh board_inspector
